@@ -10,7 +10,9 @@ const styles = {
     display: 'flex',
     backgroundColor: '#282c34',
     flexDirection: 'column',
+    // justifyContent: 'center',
     alignItems: 'center',
+    fontSize: 50,
   },
 };
 
