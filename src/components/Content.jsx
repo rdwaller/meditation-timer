@@ -1,9 +1,24 @@
-const Content = () => {
+import Bell from './Bell';
+import Moktuk from './Moktuk';
+import Timer from './Timer';
+
+const Content = ({ navItem }) => {
+    const getContentDisplay = (navItem) => {
+      switch (navItem) {
+        case 'bell':
+          return <Bell />
+        case 'moktuk':
+          return <Moktuk />
+        case 'timer':
+          return <Timer />
+        default:
+          return <Timer />;
+      }
+    };
+
   return (
     <div className="content" style={styles.container}>
-      <div>
-        Content here
-      </div>
+      {getContentDisplay(navItem)}
     </div>
   )
 };
@@ -11,15 +26,15 @@ const Content = () => {
 const styles = {
   // make sure that this is the best way to organize the sections and their size
   container: {
-    width: '100%',
-    height: '100%',
     // backgroundColor: 'green',
     display: 'flex',
     //rw what is this all about?
     flex: '1 1 auto',
     flexDirection: 'column',
+    height: '100%',
     justifyContent: 'center',
-    paddingBottom: 100,
+    marginBottom: 100,
+    width: '100%',
   },
 };
 

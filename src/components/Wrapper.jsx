@@ -6,13 +6,13 @@ const Wrapper = ({ children }) => (
 
 const styles = {
   wrapper: {
-    minHeight: '100vh',
-    display: 'flex',
-    backgroundColor: '#282c34',
-    flexDirection: 'column',
-    // justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: '#BDC3C7',
+    display: 'flex',
+    flexDirection: 'column',
     fontSize: 50,
+    minHeight: '100vh',
+    // justifyContent: 'center',
   },
 };
 
